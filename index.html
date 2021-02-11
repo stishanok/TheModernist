@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js"></script>
     <title>The Modernist</title>
 </head>
 <body>
@@ -30,6 +31,25 @@
                     </li>
                 </ul>
             </nav>
+            <div class="nav_dropdown">
+                <a onclick="myFunction()" class="nav__link">Menu</a>
+                <div id="myDropdown" class="dropdown__content">
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Home</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Style demo</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Full width</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Dropdown</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div> <!-- /.header__inner -->
     </div> <!-- /.container -->
 </header>
