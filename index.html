@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -8,7 +8,7 @@
 </head>
 <body>
 <!--Header-->
-<header class="header">
+<header class="header shadow">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
@@ -31,25 +31,16 @@
                     </li>
                 </ul>
             </nav>
-            <div class="nav_dropdown">
-                <a onclick="myFunction()" class="nav__link">Menu</a>
-                <div id="myDropdown" class="dropdown__content">
-                    <ul class="dropdown__list">
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="#">Home</a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="#">Style demo</a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="#">Full width</a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a class="dropdown__link" href="#">Dropdown</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <nav class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle"><span></span></label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="#">Style demo</a></li>
+                    <li><a class="menu__item" href="#">Full width</a></li>
+                    <li><a class="menu__item" href="#">Dropdown</a></li>
+                </ul>
+            </nav>
         </div> <!-- /.header__inner -->
     </div> <!-- /.container -->
 </header>
