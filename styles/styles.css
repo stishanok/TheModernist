@@ -205,11 +205,12 @@ ul {
 .divider__inner {
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 .divider__item {
     display: inline-block;
-    position: relative;
+    position: static;
     font-size: 32px;
     color: #fff;
     background-color: #303030;
@@ -218,21 +219,15 @@ ul {
     text-transform: uppercase;
 }
 
-.divider__item:before, .divider__item:after {
+.divider__item:before {
     position: absolute;
     content: "";
     height: 4px;
-    width: 1900px;
+    width: 100%;
     top: 50%;
     background-color: #303030;
-}
-
-.divider__item:before {
-    right: 100%;
-}
-
-.divider__item:after {
-    left: 100%;
+    right: 0;
+    z-index: -1;
 }
 
 /* Works ============================== */
