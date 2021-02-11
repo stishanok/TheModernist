@@ -1,8 +1,11 @@
+@import "fonts.css";
+
 body {
     margin: 0;
-    font-family: Georgia, sans-serif;
+    font-family: Graphik, sans-serif;
     font-size: 12px;
     color: #979797;
+    font-weight: normal;
     background-color: darkslategrey;
 }
 
@@ -42,10 +45,6 @@ ul {
 
 /* Logo ============================== */
 
-.header__inner {
-    font-weight: normal;
-}
-
 .logo__name {
     font-size: 28px;
     color: #fff;
@@ -60,7 +59,6 @@ ul {
 
 .nav {
     font-size: 14px;
-    font-weight: normal;
 }
 
 .nav__item {
@@ -93,14 +91,12 @@ ul {
 .intro__inner {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .intro__item {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+
 }
 
 .intro__item:first-child {
@@ -115,14 +111,12 @@ ul {
 
 .intro__title {
     font-size: 46px;
-    font-weight: normal;
     color: #fff;
     margin-bottom: 15px;
 }
 
 .intro__subtitle {
     font-size: 12px;
-    font-weight: normal;
     line-height: 1.6;
     color: #979797;
     margin-bottom: 30px;
@@ -132,7 +126,6 @@ ul {
 
 .btn {
     font-size: 13px;
-    font-weight: normal;
     background-color: #76C38F;
     color: #fff;
     border-radius: 5px;
@@ -196,7 +189,6 @@ ul {
 
 .service__tittle {
     font-size: 26px;
-    font-weight: normal;
     color: #333333;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -204,7 +196,6 @@ ul {
 
 .service__text {
     font-size: 12px;
-    font-weight: normal;
     color: #979797;
 }
 
@@ -220,7 +211,6 @@ ul {
     display: inline-block;
     position: relative;
     font-size: 32px;
-    font-weight: normal;
     color: #fff;
     background-color: #303030;
     border-radius: 5px 5px;
@@ -268,15 +258,15 @@ ul {
     border: 5px solid #fff;
     filter: grayscale(0.7);
     transition: filter 0.5s linear;
-    -webkit-transition : border 0.5s linear;
+    -webkit-transition: border 0.5s linear;
 }
 
 .work__item:hover {
-    border: 5px solid  #76C38F;
+    border: 5px solid #76C38F;
     filter: none;
 }
 
-.work__item:hover .work__tittle{
+.work__item:hover .work__tittle {
     opacity: 0;
     transition: opacity 0.2s ease-in;
 }
@@ -294,7 +284,6 @@ ul {
     left: 0;
     bottom: 0;
     font-size: 14px;
-    font-weight: normal;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -322,7 +311,6 @@ ul {
 
 .information__title {
     font-size: 16px;
-    font-weight: normal;
     color: #fff;
     margin-bottom: 30px;
 }
@@ -330,7 +318,6 @@ ul {
 .post__title {
     display: inline-block;
     font-size: 13px;
-    font-weight: normal;
     color: #76C38F;
     text-decoration: none;
     margin-bottom: 15px;
@@ -401,7 +388,7 @@ ul {
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: #222222;
-    font-family: Georgia, sans-serif;
+    font-family: Graphik, sans-serif;
     outline: none;
     color: #fff;
 }
@@ -462,7 +449,7 @@ ul {
         width: 50%;
     }
 
-    .work{
+    .work {
         padding: 50px 0 50px 0;
     }
 
